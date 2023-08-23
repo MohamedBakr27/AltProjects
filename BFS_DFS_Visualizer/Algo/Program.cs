@@ -158,7 +158,7 @@ namespace Algo
             {
                 while (OrderedPaths.Count > 0)
                 {
-                    System.Threading.Thread.Sleep(20);
+                    System.Threading.Thread.Sleep(10);
                     Pair<int, int> cur = OrderedPaths.Dequeue();
                     if (grid[cur.First, cur.Second] == '.')
                     {
@@ -166,7 +166,7 @@ namespace Algo
                         Color.Red();
                         Console.SetCursorPosition(cur.Second, cur.First);
                         w('-'.ToString());
-                        System.Threading.Thread.Sleep(30);
+                        System.Threading.Thread.Sleep(20);
                         Color.Yellow();
                         Console.SetCursorPosition(cur.Second, cur.First);
                         w('-'.ToString());
