@@ -1,4 +1,4 @@
-﻿using OwnLibrary;
+using OwnLibrary;
 /*
     Coded By : Mohamed Bakr
     GitHub : https://github.com/MohamedBakr27
@@ -166,7 +166,7 @@ namespace Algo
                         Color.Red();
                         Console.SetCursorPosition(cur.Second, cur.First);
                         w('-'.ToString());
-                        System.Threading.Thread.Sleep(20);
+                        System.Threading.Thread.Sleep(10);
                         Color.Yellow();
                         Console.SetCursorPosition(cur.Second, cur.First);
                         w('-'.ToString());
@@ -180,14 +180,14 @@ namespace Algo
                 Queue<Pair<int, int>> tmp = new Queue<Pair<int, int>>(Path);
                 while(Path.Count>0)
                 {
-                    System.Threading.Thread.Sleep(10);
+                    System.Threading.Thread.Sleep(5);
                     Pair<int, int> cur = Path.Pop();
                     if (grid[cur.First, cur.Second] == '-')
                     {
                         Color.Red();
                         Console.SetCursorPosition(cur.Second, cur.First);
                         w('-'.ToString());
-                        System.Threading.Thread.Sleep(20);
+                        System.Threading.Thread.Sleep(10);
                         Color.Cyan();
                         Console.SetCursorPosition(cur.Second, cur.First);
                         w('-'.ToString());
